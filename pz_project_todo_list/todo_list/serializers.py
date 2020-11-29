@@ -8,10 +8,15 @@ class TodoItemSerializer(serializers.ModelSerializer):
         fields = ['id', 'list_id', 'name', 'done_at', 'created_at']
 
 
+class TodoItemUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TodoItem
+        fields = ['name', 'done_at']
+
+
 class TodoListSerializer(serializers.ModelSerializer):
     items = TodoItemSerializer(many=True, read_only=True)
 
     class Meta:
         model = TodoList
         fields = ['id', 'items', 'title', 'created_at']
-
