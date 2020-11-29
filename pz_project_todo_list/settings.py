@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'pz_project_todo_list.todo_list.apps.TodoListConfig'
 ]
 
 MIDDLEWARE = [
