@@ -7,7 +7,7 @@
 <br>
 <br>
 
-**Available endpoints:**
+**Documentation is available under _/docs_ URL. Available endpoints:**
 
     - GET /todo-lists/
     - POST /todo-lists/     [title]
