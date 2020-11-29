@@ -10,13 +10,13 @@
 **Available endpoints:**
 
     - GET /todo-lists/
-    - POST /todo-lists/     [_title_]
+    - POST /todo-lists/     [title]
     - GET /todo-lists/1
-    - PUT /todo-lists/1     [_title_]
+    - PUT /todo-lists/1     [title]
     - DELETE /todo-lists/1
     
     - GET /todo-items/
-    - POST /todo-items/      [_list_id_, _name_, _done_at_]
+    - POST /todo-items/      [list_id, name, done_at]
     - GET /todo-items/1
-    - PATCH /todo-items/1    [_name_, _done_at_]
+    - PATCH /todo-items/1    [name, done_at]
     - DELETE /todo-items/1
