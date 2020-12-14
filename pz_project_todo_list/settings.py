@@ -25,7 +25,8 @@ SECRET_KEY = '7hoelxgqn_%x6-_e7nm^k-e1_1^zhu-h9zfiww!o^2z!t67#60'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '172.17.0.1']
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'pz_project_todo_list.todo_list.apps.TodoListConfig'
 ]
 
@@ -49,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'pz_project_todo_list.urls'
